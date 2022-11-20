@@ -1,4 +1,17 @@
 BOXING PT
-# self introduction website with detailed explanation of what i do in my life. The story of how i started boxing and continue to compete in the amateur scene.
-# User audience targeted will be people who wants to start out boxing but can't find a place to start or dont know how to start.
-# Page 1 will talk more about myself. Navigation bar in page 1 to navigate to page 2 and 3. Page 2 will be the story of my boxing journey, and page 3 will be a 'business' page where people can hit me up for Boxing PT. Contact details will be shown.
+Personal Website: Boxing Personal Training name - The Box
+Page 1: Self introduction and my boxing journey
+- Navigation Bar to navigate through the website.
+- Pictures of me in competitions
+
+Page 2: Past customer's feedback on PT Session or 'Proof of Work'
+- A list of customer's feedback which will go through what will be taught to them during the session.
+- List of things to expect when they decide to have a 1-1 PT Session with me. (Eg, Pad work, HIIT, Technical Drills.)
+
+Page 3: A 'Contact Me' page
+- Contact details will be posted on the second page for customers who are interested. (Eg, Phone Number, Email Address, Instagram etc.)
+- Pictures or graphic detail to allow further understanding.
+
+![Page 1](https://user-images.githubusercontent.com/85924576/202905648-9f861086-b0d3-4716-8c00-90a8f0eaf8ad.PNG)
+![Page 2](https://user-images.githubusercontent.com/85924576/202905650-3798fcd1-7e80-488c-98de-118afa7f4028.PNG)
+![Page 3](https://user-images.githubusercontent.com/85924576/202905652-49288886-f475-4ac0-b81b-81317b6a65f6.PNG)
