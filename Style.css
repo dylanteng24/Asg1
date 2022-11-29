@@ -1,7 +1,7 @@
 @import url('https://www.cssfontstack.com/Times-New-Roman');
 
 body {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 * {
@@ -75,7 +75,7 @@ body {
   .home {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(102, 99, 99, 0.6)),
-      url('Pics/Box\ 2.jpeg') no-repeat;
+      url('Pics/Team.jpg') no-repeat;
     background-size: auto;
     background-position: center;
     background-attachment: fixed;
@@ -95,7 +95,7 @@ body {
   }
   
   .home p {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
     margin-bottom: 3rem;
     text-transform: none;
@@ -177,75 +177,132 @@ body {
     text-transform: none;
   }
   /* about */
-  
+
   /* Review */
-  .Review{
-    padding: 20px 0;
-    background: #000000;
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+  }
+  section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background:#585858;
+    overflow: hidden;
+  }
+  section .heading{
+    display: inline-block;
+    position: relative;
     color: #ffffff;
+    font-size: 4vw;
+    padding: 60px;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+  }
+  section .heading:before{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 7px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 25%;
+    background: #393939;
+  }
+  section .heading b{
+    color: #fff;
+  }
+  .wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
   }
-  .inner{
-    max-width: 1300px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
+  .wrapper .container{
+    position: relative;
+    width: 350px;
+    color: #fff;
+    background: #222;
+    margin: 40px 10px;
+    padding: 30px 20px;
+    border-radius: 3px;
+    transition: 0.3s ease;
   }
-  
-  .border{
-    width: 160px;
-    height: 5px;
-    background: #ffffff;
-    margin: 26px auto;
+  .wrapper .container .profile{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -10%;
+    width: 100%;
+    display: block;
   }
-  
-  .row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .col{
-    flex: 33.33%;
-    max-width: 33.33%;
-    box-sizing: border-box;
-    padding: 15px;
-  }
-  .Review{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(102, 99, 99, 0.6)),
-      url('Pics/Box\ 3.jpeg') no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    padding: 40px;
-  }
-  .Review img{
-    width: 100px;
+  .wrapper .container .profile .imgbox{
+    position: relative;
     height: 100px;
+    width: 100px;
+    margin: auto;
+    border: 8px solid #070c0d;
     border-radius: 50%;
+    overflow: hidden;
   }
-  .name{
+  .wrapper .container .profile .imgbox img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s ease;
+  }
+  .wrapper .container .profile .imgbox:hover img{
+    filter: saturate(140%);
+    transform: scale(0.95);
+  }
+  .wrapper .container .profile h2{
+    padding: 5px 0;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .wrapper .container p{
+    margin-top: 50px;
+    color: #fff;
+    padding: 0 8px;
+    font-size: 18px;
+    opacity: 0.8;
+  }
+  .wrapper .container .left{
     font-size: 25px;
-    text-transform: none;
-    margin: 20px 0;
+    display: block;
+    text-align: left;
+    color: #3b7cf5;
   }
-  .stars{
-    color: #fd0000;
-    margin-bottom: 20px;
+  .wrapper .container .right{
+    font-size: 25px;
+    display: block;
+    text-align: right;
+    color: #3b7cf5;
   }
-  
-  
-  @media screen and (max-width:960px) {
-  .col{
-    flex: 100%;
-    max-width: 80%;
+  .wrapper .container .social{
+    width: 100%;
   }
+  .wrapper .container .social i{
+    font-size: 1.2em;
+    color: #fff;
+    padding: 8px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.5);
   }
-  
-  @media screen and (max-width:600px) {
-  .col{
-    flex: 100%;
-    max-width: 100%;
-  }
+  .wrapper .container .social i:hover{
+    background: #3b7cf5;
   }
   /* Review */
   
