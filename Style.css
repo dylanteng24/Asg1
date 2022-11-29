@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap');
+@import url('https://www.cssfontstack.com/Times-New-Roman');
 
 body {
     background-color: #000000;
 }
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -75,11 +75,11 @@ body {
   .home {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(102, 99, 99, 0.6)),
-      url('Box\ 2.jpeg') no-repeat;
-    background-size: fill;
+      url('Pics/Box\ 2.jpeg') no-repeat;
+    background-size: auto;
     background-position: center;
     background-attachment: fixed;
-  
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,7 +95,7 @@ body {
   }
   
   .home p {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 400;
     margin-bottom: 3rem;
     text-transform: none;
@@ -159,7 +159,7 @@ body {
   .about .box-container .box .image img {
     width: 110%;
     height: 110%;
-    object-fit: cover;
+    object-fit: fill;
   }
   
   .about .box-container {
@@ -178,58 +178,11 @@ body {
   }
   /* about */
   
-  /* services */
-  .services {
-    background: var(--light-bg);
-  }
-  
-  .services .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    gap: 5rem;
-  }
-  
-  .services .box-container .box {
-    background: var(--white);
-    text-align: center;
-    border-radius: 1rem;
-    padding: 3rem;
-  }
-  
-  .services .box-container .box img {
-    margin-bottom: 2rem;
-  }
-  
-  .services .box-container .box h3 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
-  
-  .services .box-container .box p {
-    font-size: 1.5rem;
-    line-height: 2;
-    color: var(--light-color);
-  }
-  
-  .services .box-container .box:hover {
-    background: var(--black);
-  }
-  
-  .services .box-container .box:hover h3,
-  .services .box-container .box:hover p {
-    color: var(--white);
-  }
-  
-  .services .box-container .box:hover img {
-    filter: invert(100%);
-  }
-  /* services */
-  
-  /* testimonial */
-  .testimonials{
+  /* Review */
+  .Review{
     padding: 20px 0;
-    background: #f1f1f1;
-    color: #434343;
+    background: #000000;
+    color: #ffffff;
     text-align: center;
   }
   .inner{
@@ -242,7 +195,7 @@ body {
   .border{
     width: 160px;
     height: 5px;
-    background: #6ab04c;
+    background: #ffffff;
     margin: 26px auto;
   }
   
@@ -257,22 +210,26 @@ body {
     box-sizing: border-box;
     padding: 15px;
   }
-  .testimonial{
-    background: #fff;
+  .Review{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(102, 99, 99, 0.6)),
+      url('Pics/Box\ 3.jpeg') no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     padding: 40px;
   }
-  .testimonial img{
+  .Review img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
   }
   .name{
     font-size: 25px;
-    text-transform: uppercase;
+    text-transform: none;
     margin: 20px 0;
   }
   .stars{
-    color: #6ab04c;
+    color: #fd0000;
     margin-bottom: 20px;
   }
   
@@ -290,7 +247,7 @@ body {
     max-width: 100%;
   }
   }
-  /* testimonial */
+  /* Review */
   
   /* contact */
   .contact {
