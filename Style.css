@@ -156,6 +156,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 2rem;
+    align-items: center;
   }
   
   .about .box-container .box p {
@@ -165,6 +166,10 @@ body {
     margin-bottom: 1.5rem;
     color: var(--white);
     text-transform: none;
+  }
+
+  .image {
+    margin-top: 100px;
   }
   /* about */
 
