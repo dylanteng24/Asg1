@@ -152,16 +152,6 @@ body {
   /* header */
   
   /* about */
-  .about .box-container .box .image {
-    height: 40rem;
-  }
-  
-  .about .box-container .box .image img {
-    width: 110%;
-    height: 110%;
-    object-fit: fill;
-  }
-  
   .about .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -171,7 +161,7 @@ body {
   .about .box-container .box p {
     text-align: left;
     font-size: 1.85rem;
-    line-height: 1.5;
+    line-height: 1;
     margin-bottom: 1.5rem;
     color: var(--white);
     text-transform: none;
