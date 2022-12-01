@@ -21,10 +21,6 @@ body {
     --white: #fff;
     --light-color: #000000;
     --light-bg: #f5f5f8;
-    --google-color: #4285f4;
-    --twitter-color: #1da1f2;
-    --youtube-color: #ff0000;
-    --linkedin-color: #0e76a8;
   }
 
   html {
@@ -53,7 +49,7 @@ body {
   .btn {
     color: var(--white);
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 2rem;
     border: 0.1rem solid var(--white);
     border-radius: 10rem;
     padding: 1.5rem 4rem;
@@ -74,7 +70,7 @@ body {
   /* home */
   .home {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(102, 99, 99, 0.6)),
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(177, 177, 177, 0.6)),
       url('Pics/Team.jpg') no-repeat;
     background-size: auto;
     background-position: center;
@@ -89,14 +85,14 @@ body {
   
   .home h1 {
     font-size: 6rem;
-    font-weight: 400;
+    font-weight: bold;
     margin-bottom: 3rem;
     color: var(--white);
   }
   
   .home p {
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: bold;
     margin-bottom: 3rem;
     text-transform: none;
     color: var(--white);
@@ -115,12 +111,6 @@ body {
     z-index: 100;
   }
   
-  .header.active {
-    background: var(--white);
-    padding: 3rem 9%;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  }
-  
   .header.active .logo,
   .header.active .navbar a,
   .header.active .menu {
@@ -129,7 +119,7 @@ body {
   
   .header .logo {
     margin-right: auto;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--white);
     font-weight: 700;
   }
@@ -152,6 +142,16 @@ body {
   /* header */
   
   /* about */
+  section{
+    position: relative;
+    min-height: 0vh;
+    width: 100%;
+    background:#808080;
+  }
+  .about h1{
+    color: #fff;
+    font-weight: bold;
+  }
   .about .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -161,8 +161,8 @@ body {
   
   .about .box-container .box p {
     text-align: left;
-    font-size: 1.85rem;
-    line-height: 1;
+    font-size: 2.5rem;
+    line-height: 1.5;
     margin-bottom: 1.5rem;
     color: var(--white);
     text-transform: none;
@@ -173,134 +173,94 @@ body {
   }
   /* about */
 
-  /* Review */
+  /* Rates */
   *{
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
-  }
-  section{
-    position: relative;
+}
+.container{
+    width: 100%;
     min-height: 100vh;
-    width: 100%;
-    background:#585858;
-    overflow: hidden;
-  }
-  section .heading{
-    display: inline-block;
-    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.74), rgba(51, 51, 51, 0.6)),
+    url('Pics/Canelo\ WP.jpg') no-repeat;
+    background-size: 100em;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.container h1{
     color: #ffffff;
-    font-size: 4vw;
-    padding: 60px;
-    width: 100%;
+    font-size:32px;
+    padding:50px 0;
     text-align: center;
-    font-weight: 800;
-  }
-  section .heading:before{
-    position: absolute;
-    content: '';
-    width: 15%;
-    height: 7px;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 25%;
-    background: #393939;
-  }
-  section .heading b{
-    color: #fff;
-  }
-  .wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  .wrapper .container{
-    position: relative;
-    width: 350px;
-    color: #fff;
-    background: #222;
-    margin: 40px 10px;
-    padding: 30px 20px;
-    border-radius: 3px;
-    transition: 0.3s ease;
-  }
-  .wrapper .container .profile{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: -10%;
-    width: 100%;
-    display: block;
-  }
-  .wrapper .container .profile .imgbox{
-    position: relative;
-    height: 100px;
-    width: 100px;
+}
+.price-row{
+    width: 90%;
+    max-width: 1100px;
     margin: auto;
-    border: 8px solid #070c0d;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  .wrapper .container .profile .imgbox img{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: 0.3s ease;
-  }
-  .wrapper .container .profile .imgbox:hover img{
-    filter: saturate(140%);
-    transform: scale(0.95);
-  }
-  .wrapper .container .profile h2{
-    padding: 5px 0;
-    font-size: 18px;
-    text-transform: capitalize;
-    color: #fff;
-    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+}
+.price-col{
+    background: #a5a5a5;
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
     text-align: center;
-  }
-  .wrapper .container p{
-    margin-top: 50px;
-    color: #fff;
-    padding: 0 8px;
-    font-size: 18px;
-    opacity: 0.8;
-  }
-  .wrapper .container .left{
-    font-size: 25px;
-    display: block;
-    text-align: left;
-    color: #3b7cf5;
-  }
-  .wrapper .container .right{
-    font-size: 25px;
-    display: block;
-    text-align: right;
-    color: #3b7cf5;
-  }
-  .wrapper .container .social{
+    opacity: 0.9;
+}
+.price-col h2{
     width: 100%;
-  }
-  .wrapper .container .social i{
-    font-size: 1.2em;
-    color: #fff;
-    padding: 8px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 4px;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.5);
-  }
-  .wrapper .container .social i:hover{
-    background: #3b7cf5;
-  }
-  /* Review */
-  
+    padding: 30px;
+    font-size: 22px;
+    font-family: sans-serif;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 0;
+    background: #ffffff;
+}
+.price-col h3{
+    font-size: 44px;
+    font-family: sans-serif;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+.price-col h3 span{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.price-col p{
+    text-align: left;
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: sans-serif;
+}
+.Booking {
+  background: fixed;
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+.Booking .Booking{
+  width: 100%;
+  padding: 14px;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  transition: background 0.5s;
+  text-align: center;
+}
+.Booking .Booking:hover{
+  background: #000000;
+}
+  /* Rates */
+
   /* contact */
   .contact {
     background: var(--light-bg);
@@ -369,100 +329,43 @@ body {
     color: var(--white);
   }
   /* contact */
-  
+
   /* footer */
-  .footer {
-    text-align: center;
-  }
-  
-  .footer .logo {
-    font-size: 2rem;
-    color: var(--black);
-    font-weight: 700;
-  }
-  
-  .footer .logo span {
-    font-weight: normal;
-  }
-  
-  .footer p {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 1.7rem;
-    color: gray;
-  }
-  
-  .wrapper .button{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    margin: 0 5px;
-    overflow: hidden;
-    background: #fff;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-    transition: all 0.3s ease-out;
-  }
-  .wrapper .button:hover{
-    width: 200px;
-  }
-  .wrapper .button .icon{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-    transition: all 0.3s ease-out;
-  }
-  .wrapper .button:nth-child(1):hover .icon{
-    background: #4267B2;
-  }
-  .wrapper .button:nth-child(2):hover .icon{
-    background: #1DA1F2;
-  }
-  .wrapper .button:nth-child(3):hover .icon{
-    background: #E1306C;
-  }
-  .wrapper .button:nth-child(4):hover .icon{
-    background: #333;
-  }
-  .wrapper .button:nth-child(5):hover .icon{
-    background: #ff0000;
-  }
-  .wrapper .button .icon i{
-    font-size: 25px;
-    line-height: 60px;
-    transition: all 0.69s ease-out;
-  }
-  .wrapper .button:hover .icon i{
-    color: #fff;
-  }
-  .wrapper .button span{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 60px;
-    margin-left: 10px;
-    transition: all 0.3s ease-out;
-  }
-  .wrapper .button:nth-child(1) span{
-    color: #4267B2;
-  }
-  .wrapper .button:nth-child(2) span{
-    color: #1DA1F2;
-  }
-  .wrapper .button:nth-child(3) span{
-    color: #E1306C;
-  }
-  .wrapper .button:nth-child(4) span{
-    color: #333;
-  }
-  .wrapper .button:nth-child(5) span{
-    color: #ff0000;
-  }
-  /* footer */
+.footer {
+  position: relative;
+  min-height: 0vh;
+  width: 100%;
+  background:#383838;
+  text-align: center;
+}
+
+.footer .logo {
+  font-size: 3rem;
+  color: var(--white);
+  font-weight: normal;
+}
+
+.footer .logo span {
+  font-weight: bold;
+  color: #000000;
+}
+
+.wrapper .social{
+  width: 100%;
+}
+.wrapper .social i{
+  font-size: 2.5em;
+  color: #fff;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.856);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.5);
+}
+.wrapper .social i:hover{
+  background: #636363;
+}
+/* footer */
+
   
   /* go top */
   .go-top {
